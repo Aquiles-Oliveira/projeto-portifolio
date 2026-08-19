@@ -20,7 +20,16 @@
   --texto-inverso:#ffffff;
   --destaque: #0077ff;
   --destaque-inverso: #66bbff;
-  --fundo-card: #ffffff:
+  --fundo-card: #ffffff;
+}
+
+body.escuro{
+  --fundo-principal:#222222;
+  --texto:#e0e0e0;
+  --texto-inverso:#333333;
+  --destaque: #ff5522;
+  --destaque-inverso: #a73917;
+  --fundo-card: #444444;
 }
 
 body {
@@ -28,6 +37,7 @@ body {
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
+  transition: background-color 0.5s, color 0.5s
 }
 
 header {
@@ -258,7 +268,7 @@ gap: 30px;
     grid-column: 2 / 3;
     height: fit-content;
     position: sticky;
-    top: 60px;
+    top: 65px;
    }
   
   section.detalhes{
